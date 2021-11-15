@@ -15,11 +15,13 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.rafadev.cdbackend.config.JwtTokenUtil;
 import com.rafadev.cdbackend.entities.JwtRequest;
+import com.rafadev.cdbackend.entities.JwtResponse;
+import com.rafadev.cdbackend.services.JwtUserDetailsService;
 
 @RestController
 @RequestMapping(value = "authenticate")
 @CrossOrigin
-public class AuthenticateRepository {
+public class AuthenticateResource {
 
 	@Autowired
 	private AuthenticationManager authenticationManager;
